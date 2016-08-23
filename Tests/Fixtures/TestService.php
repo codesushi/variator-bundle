@@ -1,8 +1,8 @@
 <?php
 
-namespace Codesushi\VariatorBundle\Tests\Fixtures;
+namespace Coshi\VariatorBundle\Tests\Fixtures;
 
-use Codesushi\Variator\Tests\Fixtures\TestClass;
+use Coshi\Variator\Tests\Fixtures\TestClass;
 
 class TestService extends TestClass
 {

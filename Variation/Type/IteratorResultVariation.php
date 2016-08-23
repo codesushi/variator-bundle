@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Codesushi\VariatorBundle\Variation\Type;
+namespace Coshi\VariatorBundle\Variation\Type;
 
-use Codesushi\Variator\ConfigResolver;
-use Codesushi\Variator\Variation\AbstractVariation;
+use Coshi\Variator\ConfigResolver;
+use Coshi\Variator\Variation\AbstractVariation;
 
 class IteratorResultVariation extends AbstractVariation
 {

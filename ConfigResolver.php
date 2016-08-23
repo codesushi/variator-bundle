@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Codesushi\VariatorBundle;
+namespace Coshi\VariatorBundle;
 
-use Codesushi\Variator\ConfigResolver as BaseResolver;
-use Codesushi\Variator\Exception\InvalidConfigurationException;
+use Coshi\Variator\ConfigResolver as BaseResolver;
+use Coshi\Variator\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;

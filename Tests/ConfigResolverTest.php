@@ -1,11 +1,11 @@
 <?php
 
-namespace Codesushi\VariatorBundle\Tests;
+namespace Coshi\VariatorBundle\Tests;
 
-use Codesushi\VariatorBundle\DependencyInjection\CodesushiVariatorExtension;
-use Codesushi\Variator\Variation\VariationInterface;
-use Codesushi\Variator\VariationsTreeBuilder;
-use Codesushi\VariatorBundle\Tests\Fixtures\TestService;
+use Coshi\VariatorBundle\DependencyInjection\CoshiVariatorExtension;
+use Coshi\Variator\Variation\VariationInterface;
+use Coshi\Variator\VariationsTreeBuilder;
+use Coshi\VariatorBundle\Tests\Fixtures\TestService;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class ConfigResolverTest extends \PHPUnit_Framework_TestCase
@@ -23,9 +23,9 @@ class ConfigResolverTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $container = new ContainerBuilder();
-        $extension = new CodesushiVariatorExtension();
+        $extension = new CoshiVariatorExtension();
         $extension->load([], $container);
-        $this->variationsBuilder = $container->get('codesushi.variator_bundle.builder');
+        $this->variationsBuilder = $container->get('coshi.variator_bundle.builder');
         $this->service = new TestService();
         $container->set('simple_test_service', $this->service);
     }

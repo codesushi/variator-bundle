@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codesushi\VariatorBundle;
+namespace Coshi\VariatorBundle;
 
-use Codesushi\Variator\VariationFactory as BaseFactory;
+use Coshi\Variator\VariationFactory as BaseFactory;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
@@ -17,6 +17,6 @@ class VariationFactory extends BaseFactory implements ContainerAwareInterface
     */
     protected function getResolver()
     {
-        return $this->container->get('codesushi.variator_bundle.config_resolver');
+        return $this->container->get('coshi.variator_bundle.config_resolver');
     }
 }

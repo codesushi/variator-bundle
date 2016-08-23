@@ -5,14 +5,14 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="codesushi.variator_bundle.config_resolver.class">Codesushi\VariatorBundle\ConfigResolver</parameter>
-        <parameter key="codesushi.variator_bundle.factory.class">Codesushi\VariatorBundle\VariationFactory</parameter>
+        <parameter key="coshi.variator_bundle.config_resolver.class">Coshi\VariatorBundle\ConfigResolver</parameter>
+        <parameter key="coshi.variator_bundle.factory.class">Coshi\VariatorBundle\VariationFactory</parameter>
     </parameters>
 
     <services>
         <service
-                id="codesushi.variator_bundle.config_resolver"
-                class="%codesushi.variator_bundle.config_resolver.class%"
+                id="coshi.variator_bundle.config_resolver"
+                class="%coshi.variator_bundle.config_resolver.class%"
                 shared="false"
         >
             <call method="setContainer">
@@ -20,15 +20,15 @@
             </call>
         </service>
 
-        <service id="codesushi.variator_bundle.factory" class="%codesushi.variator_bundle.factory.class%">
-            <argument type="service" id="codesushi.variator_bundle.config_resolver" />
+        <service id="coshi.variator_bundle.factory" class="%coshi.variator_bundle.factory.class%">
+            <argument type="service" id="coshi.variator_bundle.config_resolver" />
             <call method="setContainer">
                 <argument type="service" id="service_container" />
             </call>
         </service>
 
-        <service id="codesushi.variator_bundle.builder" class="Codesushi\Variator\VariationsTreeBuilder">
-            <argument type="service" id="codesushi.variator_bundle.factory" />
+        <service id="coshi.variator_bundle.builder" class="Coshi\Variator\VariationsTreeBuilder">
+            <argument type="service" id="coshi.variator_bundle.factory" />
         </service>
     </services>
 

@@ -1,11 +1,11 @@
 {
-  "name": "codesushi/variator-bundle",
-  "description": "Symfony CodesushiVariatorBundle",
+  "name": "coshi/variator-bundle",
+  "description": "Symfony CoshiVariatorBundle",
   "license": "MIT",
   "type": "symfony-bundle",
   "autoload": {
     "psr-4": {
-      "Codesushi\\VariatorBundle\\": ""
+      "Coshi\\VariatorBundle\\": ""
     },
     "exclude-from-classmap": [
       "/Tests/"
@@ -19,7 +19,7 @@
   "require": {
     "php": "7.*",
     "symfony/framework-bundle": "~3.0",
-    "codesushi/variator": "0.*"
+    "coshi/variator": "0.*"
   },
   "minimum-stability": "dev"
 }

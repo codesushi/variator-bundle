@@ -1,4 +1,4 @@
-A Symfony bundle wrapper for codesushi/variator library
+A Symfony bundle wrapper for coshi/variator library
 -------------------------------------------------------
 
 Allows to specify callbacks with services:
@@ -15,7 +15,7 @@ Brings new variation type: "iteratorResult" to operate over the Doctrine Iterabl
 Usage:
 
 ````
-    $builder = $container->get('codesushi.variator_bundle.builder');
+    $builder = $container->get('coshi.variator_bundle.builder');
     
     $config = [
         'id' => [
@@ -35,7 +35,7 @@ Usage:
 You can strip values to several chunks. Variator will then fetch the data using LIMIT and OFFSET SQL statements:
 
 ````
-    $builder = $container->get('codesushi.variator_bundle.builder');
+    $builder = $container->get('coshi.variator_bundle.builder');
     
     $config = [
         'id' => [
