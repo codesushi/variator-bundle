@@ -25,6 +25,10 @@
             <call method="setContainer">
                 <argument type="service" id="service_container" />
             </call>
+            <call method="registerType">
+                <argument type="string">iteratorResult</argument>
+                <argument type="string">\Coshi\VariatorBundle\Variation\Type\IteratorResultVariation</argument>
+            </call>
         </service>
 
         <service id="coshi.variator_bundle.builder" class="Coshi\Variator\VariationsTreeBuilder">

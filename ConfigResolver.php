@@ -35,6 +35,6 @@ class ConfigResolver extends BaseResolver implements ContainerAwareInterface
             throw new InvalidConfigurationException(sprintf('String "%s" doesn\'t match service definition', $class));
         }
 
-        return $this->container->get(substr($class, 1));
+        return $this->container->get(trim(substr($class, 1)));
     }
 }
